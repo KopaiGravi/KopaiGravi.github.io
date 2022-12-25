@@ -1,0 +1,119 @@
+div.product {
+    background-color: white;
+    border: 1px solid grey;
+    height: 800px;
+    width: 500px;
+    display: inline-block;
+    vertical-align: middle;
+    margin : 10px;
+}
+section {
+    text-align: center;
+}
+
+h1.productname {
+    font-size: 25px;
+    color:rgb(56, 56, 153);
+    text-align: center;
+}
+
+p.volume {
+    text-align: center;
+    color: rgb(165, 165, 165);
+}
+
+.stars label::after {
+    content: '\2606';
+    color: yellow;
+    cursor: pointer;
+    font-size: 200%;
+}
+
+div.stars input:checked~label::after, 
+div.stars input:hover~label::after {
+    content: '\2605';
+}
+
+.stars {
+    direction: rtl;
+    text-align: center;
+}
+
+input {
+    display: none;
+    text-align: left;
+}
+
+h2.price {
+    color: red;
+    text-align: center;
+}
+
+p.description {
+    text-align: center;
+    margin: 0px 50px 0px 50px;
+}
+
+label.changer {
+    font-size: 150%;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+.changer {
+    text-align: center;
+    margin-left: 50px;
+}
+
+#column:not(:checked) ~ section div.product {
+    height: 400px;
+    width: 1400px;
+    text-align: justify;
+    position: relative;
+}
+
+#column:not(:checked) ~ section div.product div.pic {
+    width:330px;
+    height:400px;
+    display:inline-block;
+
+}
+
+#column:not(:checked) ~ section div.product div.pic img {
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 80px;
+}
+
+#column:not(:checked) ~ section div.product div.maininfo {
+    height: 250px;
+    width: 400px;
+    display:inline-block;
+    text-align: center;
+}
+
+#column:not(:checked) ~ section div.product div.maininfo h1.productname{
+    vertical-align: middle;
+}
+
+#column:not(:checked) ~ section div.product div.desc {
+    height: 300px;
+    width: 600px;
+    display:inline-block;
+
+}
+
+#column:not(:checked) ~ section div.product div.desc p.description {
+    font-size: 125%;
+}
+
+div.product:hover {
+    background-color: rgb(247, 247, 247);
+}
+
+h1.productname:hover {
+    color:rgb(77, 77, 182);
+    cursor: pointer;
+}
